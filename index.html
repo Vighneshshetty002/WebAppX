@@ -3,43 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application Home</title>
-    <style>
-        *{
-            height: 100%;
-            width:100%;
-            margin: 0;
-        }
-        html,body{
-            height:100%;
-            width:100%;
-            background-color: #1f2833;
-        }
-        video{
-            height: 500px;
-            width: 500px;
-            margin-top: 133px;
-        }
-    </style>
-</head>
-<body>
+    <title>Document</title>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    position: fixed;
+    z-index: 99;
+}
+#main{
+    position: relative;
+    background-color: #1f2833;
+}
+#page1{
+    height: 100vh;
+    width:100%;
+    position: relative;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#page1 h1{
+    font-size: 24px;
+    font-weight: 50;
+    text-shadow: rgb(0, 0, 0);
+    position:relative;
 
-    <div id="logo-container">
-        <center><video autoplay muted src="MINDEASE.mp4" alt="Application Logo"></video></center>
+}
+#logo{
+    height: 26px;
+    width: 101px;
+    margin-top: 3px;
+    margin-bottom: -10px;
+    margin-left: 5px;
+}
+/* video{
+    height: 280px;
+    width: 280px;
+    margin-bottom: -133px;
+    margin-top: -133px;
+} */
+a:link {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+
+a:active {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+}
+#link2{
+    margin-right: -28px;
+    margin-top:15px;
+}
+#link1{
+    margin-left:89px;
+    margin-top: 15px;
+}
+#section1{
+    display: flex;
+}
+#section2{
+    display: flex;
+}
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0b0c10;
+    }
+    .topic-box {
+      width: 175px;
+      align-items: center;
+      margin: 50px auto;
+      padding: 10px;
+      border: 2px solid #ccc;
+      text-align: center;
+      background-color: black;
+      border-radius: 20px 20px 20px 20px;
+    }
+    .topic-image {
+      margin-bottom: 0px;
+    }
+    #button {
+      display: inline-block;
+      padding: 10px 50px;
+      background-color: white;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: ex #ffbd03;
+    }
+    a{
+        color: rgb(37, 12, 90);
+    }
+    #stress{
+        margin-right: 10px;
+    }
+  </style>
+    <div id="nav">
+        <img src="logoo.png" id="logo">
+        <a href="signup.html" id="link1"><b>SignUp</b></a>
+        <a href="login.html" id="link2"><b>LogIn</b></a>
     </div>
 
-    <div id="home-link">
-        <a href="Homepage.html"></a>
+<div id="main">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div id="page1">
+        <div class="topic-box">
+            <div class="topic-image">
+              <img src="stress.png" alt="Stress Image" id="stress" width="160">
+            </div>
+            <a href="stressq1.html" id="button">Stress</a>
+          </div>
+        
+          <div class="topic-box">
+            <div class="topic-image">
+              <img src="tired.png" alt="Stress Image" id="tired" width="160" height="160px">
+            </div>
+            <a href="stress_meditation.html" id="button">Tired</a>
+          </div>
     </div>
-
-
-    <script>
-        function redirectToHomePage() {
-            setTimeout(function () {
-                window.location.href = "Homepage.html";
-            }, 3000);
-        }
-        window.onload = redirectToHomePage;
-    </script>
+</div>
+</div>
 </body>
 </html>
