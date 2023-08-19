@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Home</title>
+    <style>
+        *{
+            height: 100%;
+            width:100%;
+            margin: 0;
+        }
+        html,body{
+            height:100%;
+            width:100%;
+            background-color: #1f2833;
+        }
+        video{
+            height: 500px;
+            width: 500px;
+            margin-top: 133px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="logo-container">
+        <center><video autoplay muted src="MINDEASE.mp4" alt="Application Logo"></video></center>
+    </div>
+
+    <div id="home-link">
+        <a href="Homepage.html"></a>
+    </div>
+
+
+    <script>
+        function redirectToHomePage() {
+            setTimeout(function () {
+                window.location.href = "Homepage.html";
+            }, 3000);
+        }
+        window.onload = redirectToHomePage;
+    </script>
+</body>
+</html>
